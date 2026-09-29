@@ -1,0 +1,126 @@
+{
+  "schema": "gwdc.energydesk.nile-evidence.v1",
+  "product": "EnergyDesk",
+  "network": "TRON Nile testnet",
+  "verifier": {
+    "origin": "https://api.nileex.io",
+    "independentFromBroadcaster": true
+  },
+  "deployment": {
+    "checkedAt": "2026-09-29T13:54:37.813Z",
+    "transactionId": "7f48196490dccdda47e1ca0166d99c7b9b583d4cc5ea5c3b802838c26fd0b091",
+    "contractAddress": "TSqoRAmu4qviTuscsakTWdYRZQjpiTjP2u",
+    "verifierOrigin": "https://api.nileex.io",
+    "status": "confirmed",
+    "blockNumber": 71387432,
+    "blockTimeStamp": 1790689353000,
+    "feeSun": 7563200,
+    "reason": "独立 Nile 固化节点已匹配部署交易、执行回执、地址、创建字节码与运行时代码。"
+  },
+  "receipt": {
+    "payload": {
+      "schema": "energydesk.procurement-receipt.v1",
+      "product": "EnergyDesk",
+      "receiptKind": "procurement-decision",
+      "decisionStatus": "candidate_selected_not_ordered",
+      "report": {
+        "mode": "fixture",
+        "snapshotDigest": "147d9e2bf7dfd56ca90a186b08651ec1f2ab1b8575a9461efd16ad316547df38",
+        "quoteCreatedAt": "2026-09-29T00:00:00.000Z",
+        "quoteExpiresAt": "2026-09-29T00:01:00.000Z"
+      },
+      "request": {
+        "energy": 5590000,
+        "duration": "1h",
+        "recipient": "TQcxtc1CmGRL8NwuDs3LewTBFycgXb28AR",
+        "budgetSun": "260000000",
+        "deadline": "2026-09-29T00:45:00.000Z"
+      },
+      "plan": {
+        "id": "tronenergyrent:1790000+justlend:3800000",
+        "kind": "split",
+        "estimatedDeliverySeconds": 60,
+        "costs": {
+          "rentalSun": "194550000",
+          "serviceSun": "0",
+          "activationSun": "0",
+          "chainReserveSun": "600000",
+          "otherReserveSun": "0",
+          "totalSun": "195150000",
+          "budgetHeadroomSun": "64850000"
+        },
+        "allocations": [
+          {
+            "providerId": "tronenergyrent",
+            "providerName": "TronEnergyRent",
+            "energy": 1790000,
+            "quoteFetchedAt": "2026-09-29T00:00:00.000Z",
+            "quoteExpiresAt": "2026-09-29T00:01:00.000Z",
+            "deliverySeconds": 10,
+            "costs": {
+              "rentalSun": "80550000",
+              "serviceSun": "0",
+              "activationSun": "0",
+              "chainReserveSun": "300000",
+              "otherReserveSun": "0",
+              "totalSun": "80850000"
+            }
+          },
+          {
+            "providerId": "justlend",
+            "providerName": "JustLend · Energy",
+            "energy": 3800000,
+            "quoteFetchedAt": "2026-09-29T00:00:00.000Z",
+            "quoteExpiresAt": "2026-09-29T00:01:00.000Z",
+            "deliverySeconds": 60,
+            "costs": {
+              "rentalSun": "114000000",
+              "serviceSun": "0",
+              "activationSun": "0",
+              "chainReserveSun": "300000",
+              "otherReserveSun": "0",
+              "totalSun": "114300000"
+            }
+          }
+        ]
+      },
+      "anchor": {
+        "network": "TRON Nile testnet",
+        "chainId": "0xcd8690dc",
+        "walletAddress": "TQcxtc1CmGRL8NwuDs3LewTBFycgXb28AR",
+        "registryAddress": "TSqoRAmu4qviTuscsakTWdYRZQjpiTjP2u",
+        "method": "commit(bytes32,bytes32)",
+        "callValueSun": "0"
+      }
+    },
+    "canonical": "{\"anchor\":{\"callValueSun\":\"0\",\"chainId\":\"0xcd8690dc\",\"method\":\"commit(bytes32,bytes32)\",\"network\":\"TRON Nile testnet\",\"registryAddress\":\"TSqoRAmu4qviTuscsakTWdYRZQjpiTjP2u\",\"walletAddress\":\"TQcxtc1CmGRL8NwuDs3LewTBFycgXb28AR\"},\"decisionStatus\":\"candidate_selected_not_ordered\",\"plan\":{\"allocations\":[{\"costs\":{\"activationSun\":\"0\",\"chainReserveSun\":\"300000\",\"otherReserveSun\":\"0\",\"rentalSun\":\"80550000\",\"serviceSun\":\"0\",\"totalSun\":\"80850000\"},\"deliverySeconds\":10,\"energy\":1790000,\"providerId\":\"tronenergyrent\",\"providerName\":\"TronEnergyRent\",\"quoteExpiresAt\":\"2026-09-29T00:01:00.000Z\",\"quoteFetchedAt\":\"2026-09-29T00:00:00.000Z\"},{\"costs\":{\"activationSun\":\"0\",\"chainReserveSun\":\"300000\",\"otherReserveSun\":\"0\",\"rentalSun\":\"114000000\",\"serviceSun\":\"0\",\"totalSun\":\"114300000\"},\"deliverySeconds\":60,\"energy\":3800000,\"providerId\":\"justlend\",\"providerName\":\"JustLend · Energy\",\"quoteExpiresAt\":\"2026-09-29T00:01:00.000Z\",\"quoteFetchedAt\":\"2026-09-29T00:00:00.000Z\"}],\"costs\":{\"activationSun\":\"0\",\"budgetHeadroomSun\":\"64850000\",\"chainReserveSun\":\"600000\",\"otherReserveSun\":\"0\",\"rentalSun\":\"194550000\",\"serviceSun\":\"0\",\"totalSun\":\"195150000\"},\"estimatedDeliverySeconds\":60,\"id\":\"tronenergyrent:1790000+justlend:3800000\",\"kind\":\"split\"},\"product\":\"EnergyDesk\",\"receiptKind\":\"procurement-decision\",\"report\":{\"mode\":\"fixture\",\"quoteCreatedAt\":\"2026-09-29T00:00:00.000Z\",\"quoteExpiresAt\":\"2026-09-29T00:01:00.000Z\",\"snapshotDigest\":\"147d9e2bf7dfd56ca90a186b08651ec1f2ab1b8575a9461efd16ad316547df38\"},\"request\":{\"budgetSun\":\"260000000\",\"deadline\":\"2026-09-29T00:45:00.000Z\",\"duration\":\"1h\",\"energy\":5590000,\"recipient\":\"TQcxtc1CmGRL8NwuDs3LewTBFycgXb28AR\"},\"schema\":\"energydesk.procurement-receipt.v1\"}",
+    "receiptHash": "03d3d4335ac032dde9b590e7fbf14afc7cbb9985207f781421ec53f9cf339ab1",
+    "kindHash": "6e1cbcb608a57f5a72185cba8ecdba8189b63fda3f597dfdb5b7ef0969d1aba9",
+    "callData": "e3ce094d6e1cbcb608a57f5a72185cba8ecdba8189b63fda3f597dfdb5b7ef0969d1aba903d3d4335ac032dde9b590e7fbf14afc7cbb9985207f781421ec53f9cf339ab1"
+  },
+  "verification": {
+    "network": "TRON Nile testnet",
+    "chainId": "0xcd8690dc",
+    "txId": "956b8f7ea035c816210e6f03a9c97b827069d777a8d26e92b0d6fce6a1a47bd9",
+    "explorerUrl": "https://nile.tronscan.org/#/transaction/956b8f7ea035c816210e6f03a9c97b827069d777a8d26e92b0d6fce6a1a47bd9",
+    "receiptHash": "03d3d4335ac032dde9b590e7fbf14afc7cbb9985207f781421ec53f9cf339ab1",
+    "kindHash": "6e1cbcb608a57f5a72185cba8ecdba8189b63fda3f597dfdb5b7ef0969d1aba9",
+    "checkedAt": "2026-09-29T13:54:39.280Z",
+    "status": "confirmed",
+    "message": "Nile 固化节点已核对 txID、签名钱包、Registry、commit 参数、事件和执行结果。",
+    "blockNumber": 71387628,
+    "blockTimeStamp": 1790689941000,
+    "feeSun": 234100,
+    "energyUsageTotal": 2341,
+    "observed": {
+      "ownerAddressHex": "41a0b5c9bb1bc0ae04d86b0f97ee0cc23a1f57d02c",
+      "contractAddressHex": "41b9138a167de5a26300e253303f4abdfb4088565d",
+      "callValueSun": "0",
+      "callTokenValueSun": "0",
+      "feeLimitSun": "15000000",
+      "input": "e3ce094d6e1cbcb608a57f5a72185cba8ecdba8189b63fda3f597dfdb5b7ef0969d1aba903d3d4335ac032dde9b590e7fbf14afc7cbb9985207f781421ec53f9cf339ab1",
+      "contractRet": "SUCCESS",
+      "eventFound": true
+    }
+  }
+}
